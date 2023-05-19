@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-#4444444
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-4drww8552raahu2+n=0w_i30y&6u7a14ei&7hszafd8gkhz3zs'
 
@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-4drww8552raahu2+n=0w_i30y&6u7a14ei&7hszafd8gkhz3zs
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'news',
-    'accounts'
+    'accounts',
+    'mc_donalds'
 ]
 
 MIDDLEWARE = [
