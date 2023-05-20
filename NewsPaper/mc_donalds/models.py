@@ -1,6 +1,7 @@
-
 from django.db import models
-from datetime import datetime
+
+
+# from datetime import datetime
 
 
 class Product(models.Model):
@@ -53,4 +54,4 @@ class Order(models.Model):
 class ProductOrder(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
-    _amount = models.IntegerField(default=1, db_column = 'amount')
+    _amount = models.IntegerField(default=1, db_column='amount')
